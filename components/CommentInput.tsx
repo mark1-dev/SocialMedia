@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, TextInput, TouchableOpacity, StyleSheet, Text } from 'react-native';
 import { Image } from 'expo-image';
 import Colors from '../constants/colors';
-import { useAuthStore } from '../hooks/useAuthStore';
+import useAuthStore from '../hooks/useAuthStore';
 
 interface CommentInputProps {
   onSubmit: (text: string) => void;
@@ -10,7 +10,7 @@ interface CommentInputProps {
 
 export default function CommentInput({ onSubmit }: CommentInputProps) {
   const [comment, setComment] = useState('');
-  const { user } = useAuthStore();
+  const  user  = useAuthStore();
 
   const handleSubmit = () => {
     if (comment.trim()) {

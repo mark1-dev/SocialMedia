@@ -1,15 +1,15 @@
 const Colors = {
   light: {
-    background: '#ffffff',
-    text: '#000000',
-    tint: '#2f95dc',
-    error: '#ff3b30',
+    background: '#ffffff', 
+    text: '#000000',       
+    tint: '#000000',      
+    error: '#000000',     
   },
   dark: {
-    background: '#000000',
-    text: '#ffffff',
-    tint: '#0a84ff',
-    error: '#ff453a',
+    background: '#000000', 
+    text: '#ffffff',       
+    tint: '#ffffff',      
+    error: '#ffffff',      
   },
 };
 
